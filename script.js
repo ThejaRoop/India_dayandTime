@@ -8,15 +8,8 @@ function convertTZ(date, tzString) {
 
  kabulval=convertTZ(date, "Asia/Kabul");
 
-
-document.getElementById("demo").innerHTML = kabulval;
-
-
-// toLocaleTimeString()
-// // 1672461086164
-
-// date.toLocaleTimeString();
-// // 10:37:35 PM
-
-// date.toUTCString()
-// Sat, 31 Dec 2022 04:45:19 GMT
+ Hours = kabulval.getHours();
+ Minutes=kabulval.getMinutes();
+ HandM= "Current time in India is 7 minutes less than "
+            +  Hours + ' Hours and ' + Minutes+ ' Minutes.'  ;
+ document.getElementById("demo1").innerHTML = HandM;
